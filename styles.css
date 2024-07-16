@@ -1,0 +1,46 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./imgs/pineapple.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+h1{
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-family: "Playwrite DK Uloopet", cursive;
+    font-size: 6em;
+    text-transform: capitalize;
+}
+
+p{
+    position: relative;
+    color: white;
+    text-transform: capitalize;
+    z-index: 2;
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+}
